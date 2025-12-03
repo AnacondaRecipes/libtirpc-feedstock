@@ -12,6 +12,10 @@ source:
 build:
   number: 0
   skip: true # [win]
+  run_exports:
+    # Removed symbols bewteen minor versions.
+    # https://abi-laboratory.pro/index.php?view=timeline&l=libtirpc
+    - {{ pin_subpackage(name, max_pin='x.x') }}
 
 requirements:
   build:
