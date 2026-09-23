@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://inux-nfs.org/~steved/libtirpc
+  git_url: git://linux-nfs.org/~steved/libtirpc
   git_rev: libtirpc-{{ version.replace('.', '-') }}
 
 build:
